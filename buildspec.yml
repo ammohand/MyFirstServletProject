@@ -4,7 +4,8 @@ phases:
   install:
     commands:
       # Upgrade AWS CLI to the latest version
-      - pip3 install --upgrade awscli
+      - uname -a
+      - pip install --upgrade awscli
   pre_build:
     commands:
       - mvn clean compile test
