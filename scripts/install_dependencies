@@ -1,0 +1,11 @@
+#!/bin/bash
+mkdir /usr/local
+cd /usr/local/
+wget https://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.14/bin/apache-tomcat-9.0.14.zip
+unzip apache-tomcat-9.0.14.zip
+mv apache-tomcat-9.0.14 tomcat9
+cd /usr/local/tomcat9
+rm -rf webapps/ROOT
+mv /home/ec2-user/javaapp/ROOT.war webapps/
+yum -y install java-1.8.0-openjdk-1.8.0.171
+alternatives --set java /usr/lib/jvm/jre-1.8.0-openjdk.x86_64/bin/java
