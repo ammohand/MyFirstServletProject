@@ -4,8 +4,6 @@ phases:
   install:
     commands:
       # Upgrade AWS CLI to the latest version
-      - yum install python3-pip -y
-      - pip3 install --upgrade awscli
   pre_build:
     commands:
       - mvn clean compile test
