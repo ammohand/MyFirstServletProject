@@ -33,7 +33,8 @@ public class MyFirstServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
 		Date date = new Date();
-		out.println(HTML_START + "<h2>Hi There!</h2><br/><h3>Date="+date+"</h3>"+HTML_END);
+		Date date1 = new Date();
+		out.println(HTML_START + "<h2>Hi There!</h2><br/><h3>Date="+date+date1+"</h3>"+HTML_END);
 	}
 
 	/**
