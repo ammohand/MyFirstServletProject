@@ -23,4 +23,4 @@ artifacts:
   files:
     - 'appspec.yml'
     - 'scripts/*'
-    - 'target/MyFirstServletProject-.0.1-SNAPSHOT.war'
+    - 'target/MyFirstServletProject-0.0.1-SNAPSHOT.war'
